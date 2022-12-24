@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+#cardContainer{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 20px;
+}
+.card>div>img{
+    width: 100%;
+}
+.card{
+    box-shadow: 2px 2px 5px gray;
+}
