@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-#cardContainer{
+.card-container{
     width: 80%;
     margin: 50px auto;
     display: grid;
