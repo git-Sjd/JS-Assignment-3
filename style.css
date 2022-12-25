@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 .card-container{
@@ -11,7 +12,58 @@ body{
 }
 .card>div>img{
     width: 100%;
+    min-width: 200px;
+    height: 300px;
 }
 .card{
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 0px 0px 5px gray;
+}
+.text-section{
+    padding: 10px;
+}
+.product-name{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section-heading{
+    margin-top: 100px;
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+}
+
+.product-company-name{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+
+.product-price{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+}
+
+@media (max-width:450px){
+
+    .card-container{
+        grid-template-columns: auto auto;
+        
+    }
+
+    .card{
+        margin-bottom: 50px;
+    }
+
+    .card>div>img{
+        min-width: 200px;
+    }
 }

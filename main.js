@@ -237,10 +237,16 @@ var productList = [
 
   var assoceriseSection = document.createElement("div")
   assoceriseSection.className="card-container"
+
+  var clothing = document.getElementById("clothing")
+  var accessories = document.getElementById("Accessories")
+
+  // var assocceriesHeading = document.createElement("h1")
+  // assoceriseSection.append(assocceriesHeading)
   
 
-  document.body.append(clothingSection);
-  document.body.append(assoceriseSection);
+  clothing.append(clothingSection);
+  accessories.append(assoceriseSection);
   
 
 
@@ -302,14 +308,17 @@ function productDisplay(){
         var textWraper=document.createElement("div");
         textWraper.className="text-section"
 
-        var productName = document.createElement("p")
+        var productName = document.createElement("h3")
         productName.innerText=productList[i].name
+        productName.className ="product-name"
 
-        var productCompany = document.createElement("h3")
+        var productCompany = document.createElement("h4")
         productCompany.innerText=productList[i].brand
+        productCompany.className="product-company-name"
 
-        var productPrice = document.createElement("p")
-        productPrice.innerText=productList[i].price;
+        var productPrice = document.createElement("h5")
+        productPrice.innerText="Rs "+ productList[i].price;
+        productPrice.className = "product-price"
 
         imageWraper.append(productImage);
         textWraper.append(productName, productCompany, productPrice)
